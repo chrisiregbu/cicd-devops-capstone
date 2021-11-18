@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular_dotnet_example": {
+    "DemoApp": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -111,7 +111,7 @@
         }
       }
     },
-    "angular_dotnet_example-e2e": {
+    "Demo-App": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -122,6 +122,20 @@
             "devServerTarget": "angular_dotnet_example:serve"
           }
         },
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/DemoApp",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ]
+          },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
