@@ -30,5 +30,17 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.0.3"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisiregbu/cicd-devops-capstone.git"
+  },
+  "author": "Chris Iregbu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisiregbu/cicd-devops-capstone/issues"
+  },
+  "homepage": "https://github.com/chrisiregbu/cicd-devops-capstone#readme"
 }
