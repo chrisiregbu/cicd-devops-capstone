@@ -45,8 +45,8 @@ jobs:
         - run:
             name: Build app
             command: |
-                sudo npm i
-                npm run build
+              sudo npm i
+              npm run build
 workflows:
   default:
       jobs:
