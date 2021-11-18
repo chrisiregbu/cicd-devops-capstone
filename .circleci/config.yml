@@ -40,6 +40,8 @@ jobs:
             name: Install local dependencies
             command: 
               npm update
+              ng update
+              ng update--all--force
         - run:
             name: Build app
             command: |
